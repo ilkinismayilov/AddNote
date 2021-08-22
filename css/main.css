@@ -1,0 +1,101 @@
+:root{
+    --main-color:rgba(41, 128, 185,1.0);
+    --main-color-light:rgba(41, 128, 185,0.3);
+    --second-color:rgba(230, 126, 34,1.0);
+    --second-color-light:rgba(230, 126, 34,0.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right bottom , var(--main-color) , var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-title{
+    font-size: 2rem;
+    color: white;
+}
+
+.header , .add-note-form{
+    min-height: 20vh;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.form-item-btn{
+    color: var(--second-color);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.form-item-btn:hover{
+    color: white;
+    background-color: var(--second-color);
+}
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list{
+    list-style-type: none;
+    min-width: 40vw;
+}
+
+.task-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    transition: 0.5s ease-in-out;
+}
+.task-desc{
+    flex: 1;
+    padding-left: 0.5rem;
+}
+
+.task-btn{
+    background-color: var(--second-color);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.task-remove{
+    background-color: rgb(218, 17, 17);
+}
+
+.task-item-done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.far{
+    pointer-events: none;
+}
+
+.remove{
+    transform: scale(0);
+}
